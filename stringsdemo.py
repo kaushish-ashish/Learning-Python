@@ -131,11 +131,12 @@
 # i = 'o' → rev_str = 'o' + 'clew' = 'oclew'
 # i = 'm' → rev_str = 'm' + 'oclew' = 'moclew'
 # i = 'e' → rev_str = 'e' + 'moclew' = 'emoclew'
-
+# Output: reversed string is: emoclew
 #Method2
 s="welcome"
 rev_str=s[::-1]   # s[0:7:-1]
 print(rev_str)  #emoclew
+
 
 
 
