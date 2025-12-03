@@ -1,3 +1,4 @@
+# Data Types
 x=100
 y=10.5
 s='welcome'  # s="welcome"
@@ -15,4 +16,5 @@ print(type(b))  #bool
 x=1234
 print(type(x))  #int
 x="welcome"
+
 print(type(x))  #str
