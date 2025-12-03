@@ -134,8 +134,19 @@
 # Output: reversed string is: emoclew
 #Method2
 s="welcome"
-rev_str=s[::-1]   # s[0:7:-1]
+rev_str=s[::-1]   # s[7:0:-1] # s[6::-1]
 print(rev_str)  #emoclew
+
+# Understanding the slice notation [start:stop:step]:
+
+# start: Where to begin (empty = from beginning)
+# stop: Where to end (empty = till the end)
+# step: The increment/direction (default is 1)
+# What [::-1] does:
+
+# start is omitted → starts from the last character
+# stop is omitted → goes until the first character
+# step = -1 → moves backward one character at a time
 
 
 
