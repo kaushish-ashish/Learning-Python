@@ -1,0 +1,78 @@
+Day-2 : Python Programming
+----------------------
+Delete the variables
+
+Operator - a symbol which will perform an operation between 2 or more variables
+
+a=100
+b=200
+
+print(a+b)
+
+1) Arithmetic
+2) Relational
+3) Logical 
+
+a	b	a and b	a or b	not a
+--------------------------------------
+TRUE	TRUE	TRUE	TRUE	FALSE
+TRUE	FALSE	FALSE	TRUE	
+FALSE	TRUE	FALSE	TRUE	TRUE
+FALSE	FALSE	FALSE	FALSE	
+
+
+Concatenation
+---------------
+
+True = 1
+False =0
+
+Formatting output
+%
+{}
+
+How to take input from user & Type conversion
+input()
+int()
+float()
+
+
+Control statements
+----------------------------
+
+1) conditional statements
+	if  if..else  elif
+
+2) Looping statements
+	while	  for
+
+3) Jumping statements
+	break	 continue
+
+Assignents
+--------------------
+1) Check the given number is Positive or nagitive
+2) Check the largest of 2 numbers
+3) Check the largest of 3 numbers
+4) Print week number if you provide weekname as input.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
