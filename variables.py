@@ -30,11 +30,11 @@
 # print(a,b,c)
 
 ###############    Example#4  ################
-x=1
-y=2
-print(x,y)  #1 2
-y,x=x,y
-print(x,y)  #2 1
+# x=1
+# y=2
+# print(x,y)  #1 2
+# y,x=x,y
+# print(x,y)  #2 1
 
 
 ###############    Example#4  ################
@@ -42,6 +42,7 @@ a=100
 print(a)  #100
 a="welcome"
 print(a) #welcome
+
 
 
 
