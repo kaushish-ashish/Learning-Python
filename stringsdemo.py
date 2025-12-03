@@ -121,10 +121,22 @@
 #     rev_str=i+rev_str  # emoclew
 # print("reversed string is:",rev_str) #emoclew
 
+# Step-by-step execution: 
+# Start with s = "welcome" and empty rev_str = ""
+# Loop through each character:
+# i = 'w' → rev_str = 'w' + '' = 'w'
+# i = 'e' → rev_str = 'e' + 'w' = 'ew'
+# i = 'l' → rev_str = 'l' + 'ew' = 'lew'
+# i = 'c' → rev_str = 'c' + 'lew' = 'clew'
+# i = 'o' → rev_str = 'o' + 'clew' = 'oclew'
+# i = 'm' → rev_str = 'm' + 'oclew' = 'moclew'
+# i = 'e' → rev_str = 'e' + 'moclew' = 'emoclew'
+
 #Method2
 s="welcome"
 rev_str=s[::-1]   # s[0:7:-1]
 print(rev_str)  #emoclew
+
 
 
 
