@@ -1,3 +1,4 @@
+# Taking input from user
 # num1=input("Enter first number:")
 # num2=input("Enter second number:")
 #
@@ -29,5 +30,6 @@ print(type(num1))  #str
 print(type(num2))  #str
 
 print(float(num1)+float(num2))  #31.0
+
 
 
