@@ -1,4 +1,4 @@
-#conditional statements
+# Conditional statements
 #	if  if..else  elif
 
 #Example1 : Print a person is eligible for vote or not
@@ -58,6 +58,7 @@ elif weekno == 7:
     print("saturday")
 else:
     print("Invalid week number")
+
 
 
 
