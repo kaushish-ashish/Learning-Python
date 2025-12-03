@@ -1,4 +1,4 @@
-# Print week number based on weekday name
+# Print weeknumber based on weekday name
 weekday_name="Friday"
 
 if weekday_name== "Sunday":
@@ -17,6 +17,7 @@ elif weekday_name== "Saturday":
     print("Weekday number is 7")
 else:
     print("Invalid Weekday Number")
+
 
 
 
