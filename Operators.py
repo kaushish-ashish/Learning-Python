@@ -1,4 +1,5 @@
-#Arithmetic operators
+# Operators
+# Arithmetic operators
 # a=5
 # b=2
 # print(a+b)  # addition of a , b
@@ -31,6 +32,7 @@ b=False
 print(a and b) # False
 print(a or b) # True
 print(not a) # False
+
 
 
 
