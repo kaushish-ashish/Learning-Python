@@ -1,0 +1,35 @@
+Day6- Python Programming
+-----------------------
+Functions
+-------------
+
+Function means set of statements which will perform a task.
+
+1) function declration/creation
+2) calling the function/ invoking funtion
+
+
+def ---> creat function
+
+functionname()  --> functiona call
+
+1) function does not take arguments not returns any value(None)
+2) function does not take arguments but returns some value
+3) function takes arguments but no return value
+4) function takes arguments and also return value
+
+Global & Local variables
+--------------------------
+The variables create outside of function are called as Global variables.
+The variables create inside of the functions called as Local variables. 
+
+
+2 types of arguments/parameters we can pass to the function
+
+1) Positional arguments
+2) Keyword arguments
+
+
+
+
+
