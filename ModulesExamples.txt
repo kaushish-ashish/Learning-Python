@@ -1,0 +1,101 @@
+###### Example1
+
+#Module: calculator.py
+
+def add(num1,num2):
+    print(num1+num2)
+
+def mul(num1,num2):
+    print(num1 * num2)
+
+#Module: operations.py
+
+#Approach1
+import calculator
+calculator.add(10, 20)
+calculator.mul(10, 20)
+
+#Appraoach2
+from calculator import add,mul
+add(10,20)
+mul(10,20)
+
+#Appraoach3
+from calculator import *
+add(10,20)
+mul(10,20)
+
+
+##### Example2: Same functions in 2 modules  
+
+
+#animal.py
+def fly():
+    print("Animal Cant fly")
+
+def color():
+    print("Animal is Black")
+	
+#bird.py
+def fly():
+    print("Bird Can Fly")
+
+def color():
+    print("Bird is Green")
+	
+#birdsandanimals.py
+
+#Approach1
+import animal
+import bird
+
+animal.fly()
+animal.color()
+
+bird.fly()
+animal.color()
+
+#Approach2
+from animal import *
+fly()
+color()
+from bird import *
+fly()
+color()
+
+
+
+#### Example3: Classes in 2 modules  
+
+#a.py
+class Animal():
+    def display(self):
+        print("I like Cow")
+
+#b.py
+class Bird():
+    def display(self):
+        print("I like Parrot")
+
+		
+#ab.py
+
+#Approach1
+import a
+import b
+
+obj1=a.Animal()
+obj1.display()
+
+obj2=b.Bird()
+obj2.display()
+
+#Approach2
+from a import Animal
+from b import Bird
+
+obj3=Animal()
+obj3.display()
+
+obj4=Bird()
+obj4.display()

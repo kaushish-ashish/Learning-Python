@@ -1,0 +1,121 @@
+#########################  Example1 - Importing modules from Single packages ############
+
+#pack1 ==> module 1 ==> display()
+#      ==> module 2 ==> show()
+
+#module-1
+def display():
+    print("This is display function from module1")
+
+#module-2
+def show():
+    print("This is show function from module2")
+	
+#client	
+import sys
+sys.path.append("C:/Users/admin/PycharmProjects/SeleniumwithPython/pack1");
+
+#Approach1
+import module1
+import module2
+
+module1.display()
+module2.show()
+
+#Approach2
+from module1 import *
+from module2 import *
+
+display()
+show()
+show()
+
+
+#########################  Example2 - Importing modules from 2 different packages ############
+
+#pack1 =========> module 1 ==> display()
+#pack1=>pack2 ==> module 2 ==> show()
+
+#Appraoch1
+
+import sys
+sys.path.append("C:/Users/admin/PycharmProjects/SeleniumwithPython/pack1");
+from module1 import *
+
+sys.path.append("C:/Users/admin/PycharmProjects/SeleniumwithPython/pack1/pack2");
+from module2 import *
+
+display()
+show()
+
+#Appraoch2
+
+import sys
+sys.path.append("C:/Users/admin/PycharmProjects/Pythontraining/Day9/pack1")
+sys.path.append("C:/Users/admin/PycharmProjects/Pythontraining/Day9/pack2")
+
+#Approach1
+import module1
+import module2
+
+module1.display()
+module2.show()
+
+#Appraoch3
+
+from module1 import *
+from module2 import *
+
+display()
+show()
+
+
+
+#########################  Example3 - Importing classes from different modules & packages ############
+
+#Package #Modules  #Classes     #Methods
+#pack1==> emp ==>  Employee  : displayemp()
+#pack2==> stu ==>  Student   : displaystu()
+#pack3 ==> client
+
+
+#pack1
+#emp.py
+#Employee
+class Employee():
+    def __init__(self,eid,ename,sal):
+        self.eid=eid
+        self.ename=ename
+        self.sal=sal
+
+    def displayemp(self):
+        print("empid:{} empname:{} empsal:{}".format(self.eid,self.ename,self.sal))
+
+#pack2
+#stu.py
+#Student
+class Student():
+    def __init__(self,sid,sname,sgrad):
+        self.sid=sid
+        self.sname=sname
+        self.sgrad=sgrad
+
+    def displaystu(self):
+        print("stuid:{} stuname:{} stusal:{}".format(self.sid,self.sname,self.sgrad))		
+
+		
+#pack3
+#client.py
+import sys
+
+sys.path.append("C:/Users/admin/PycharmProjects/SeleniumwithPython/pack1");
+from emp import Employee
+
+e=Employee(101,'scott',40000)
+e.displayemp()
+
+sys.path.append("C:/Users/admin/PycharmProjects/SeleniumwithPython/pack2");
+from stu import Student
+
+e=Student(141,'David','A')
+e.displaystu()

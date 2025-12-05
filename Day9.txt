@@ -1,0 +1,39 @@
+Day-9
+--------
+Modules & Packages
+-------------------
+
+Module ---> collection of functions, classes(variables+methods)
+
+
+1) How to create a module
+2) How to call the functions from one module to another module...
+3) Same functions in 2 modules 
+
+
+appraoch1: import moduleName
+appraoch2: from modulename import functions,classes
+
+
+Packages
+-----------
+Collections of modules.
+
+Package---> Modules---->functions & classes
+
+Ex:
+#pack1 ==> module 1 ==> display()
+       ==> module 2 ==> show()
+
+Ex:
+#package1 =========> module 1 ==> display()
+#package1=>package2 ==> module 2 ==> show()
+
+
+Ex:
+#Package  #Modules  #Classes     #Methods
+#packA==> emp ==>  Employee  : displayemp()
+#packB==> stu ==>  Student   : displaystu()
+#packC ==> client
+
+
