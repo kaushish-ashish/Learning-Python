@@ -1,19 +1,27 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-import time
 
-serv_obj=Service("C:\Drivers\chromedriver_win32\chromedriver.exe")
-driver=webdriver.Chrome(service=serv_obj)
+chrome_options = Options()
+chrome_options.add_argument("--disable-notifications")
+
+# Initialize driver with options
+driver = webdriver.Chrome(
+    service=ChromeService(ChromeDriverManager().install()),
+    options=chrome_options
+)
+
 driver.implicitly_wait(10) # seconds  # implicit wait
 
 driver.get("https://www.google.com/")
 driver.maximize_window()
 
-searchbox=driver.find_element(By.NAME,'q')
+search_box=driver.find_element(By.NAME,'q')
 
-searchbox.send_keys("Selenium")
-searchbox.submit()
+search_box.send_keys("Selenium")
+search_box.submit()
 
 
 driver.find_element(By.XPATH,"//h3[text()='Selenium']").click()
